@@ -1,0 +1,358 @@
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.about-item {
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.about-text {
+    background: black;
+    border: white 1px solid;
+    border-radius: 20px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 0%;
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
+.about-name {
+    opacity: 0.2;
+    animation: fadeIn 3s ease forwards;
+    color: white;
+    font-family: "SF Pro Text Ultralight", sans-serif ;
+    font-size: 31px;
+    margin-bottom: 3%;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+.about-details {
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+    color: white;
+    font-family: "SF Pro Text Ultralight", sans-serif ;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+.about-me-heading {
+    font-family: Commune, serif ;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 1.5;
+    background-size: 500px;
+    color: white;
+    margin-bottom: 3%;
+    text-shadow: 0 0 20px rgb(119, 207, 255);
+    animation: twinkling 6s ease-in-out infinite;
+    transition: text-shadow 0.1s ease-in-out;
+    padding: 10px 40px 10px 10px;
+}
+
+.about-section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Education-heading{
+    font-family: "SF Pro Text Ultralight", sans-serif ;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 1.5;
+    background-size: 500px;
+    color: white;
+    margin-bottom: 1%;
+    text-shadow: 0 0 20px rgb(119, 207, 255);
+    animation: twinkling 6s ease-in-out infinite;
+    transition: text-shadow 0.1s ease-in-out;
+    padding: 10px 40px 10px 10px;
+}
+
+.education-details{
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+    color: white;
+    font-weight: lighter;
+    line-height: 2;
+    padding: 10px 40px 10px 10px;
+
+
+}
+
+.education-section{
+
+width: 100%;
+    margin-bottom: 100px;
+}
+
+.education-year span{
+    align-items: end;
+    font-family: "SF Pro Text Ultralight",sans-serif;
+    font-weight: lighter;
+}
+
+.education-place{
+    font-family: "SF Pro Text Ultralight",sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+
+}
+.education-title
+{
+    font-family: "SF Pro Display Regular",sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+
+
+.education-school-name-text {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-place, .education-year {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+.section2 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: black;
+    padding: 50px;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.education-details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+}
+
+.education-details {
+    flex-basis: 50%;
+    padding: 10px 40px 10px 10px;
+    box-sizing: border-box;
+}
+
+.education-school-name-text {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-place, .education-year {
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.skills-section{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.skills-heading
+{
+    font-family: "SF Pro Text Ultralight", sans-serif ;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 1.5;
+    background-size: 500px;
+    color: white;
+    margin-bottom: 1%;
+    text-shadow: 0 0 20px rgb(119, 207, 255);
+    animation: twinkling 6s ease-in-out infinite;
+    transition: text-shadow 0.1s ease-in-out;
+    padding: 10px 40px 10px 10px;
+}
+
+.skills-details-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 90%;
+}
+
+.skills-details{
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+    color: white;
+    font-weight: lighter;
+    line-height: 2;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.skills-details span{
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    line-height: 3;
+    margin-right: 10px;
+}
+
+.education-section, .skills-section {
+    width: 50%;
+}
+
+.skills-details span:hover{
+    transition: box-shadow 0.3s ease-in-out;
+    color: black;
+    background: white;
+    box-shadow: 0 0 10px 3px #ffffff;
+    animation: animate-hero-btn 0.4s ease-in-out ;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 100px;
+
+}
+
+.experience-timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 55%;
+    color: white;
+
+
+}
+
+.experience-timeline-item {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.experience-timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 1px solid white;
+}
+
+.experience-timeline-content {
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-bottom: 30px;
+
+}
+
+.experience-timeline-date {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+}
+
+
+
+
+
+.experience-heading{
+    font-family: "SF Pro Text Ultralight", sans-serif ;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 1.5;
+    background-size: 500px;
+    color: white;
+    margin-bottom: 1%;
+    text-shadow: 0 0 20px rgb(119, 207, 255);
+    animation: twinkling 6s ease-in-out infinite;
+    transition: text-shadow 0.1s ease-in-out;
+    padding: 10px 40px 10px 10px;
+}
+
+.experience-description{
+    line-height: 2;
+    font-size: 16px;
+    font-family: "SF Pro Text Ultralight",sans-serif;
+}
+
+.experience-title{
+    font-size: 25px;
+}
+
+.experience-date{
+    margin-bottom: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(-100%);
+    filter:blur(5px);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+
+.my-picture{
+    width: 100%;
+    max-width: 650px;
+    max-height: 655px;
+    margin-bottom: 20px;
+    margin-top: 13%;
+    border-radius: 10px;
+    transition: transform .3s ease;
+}
