@@ -1,0 +1,43 @@
+[debug] [2023-04-03T06:24:22.480Z] ----------------------------------------------------------------------
+[debug] [2023-04-03T06:24:22.482Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\viole\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2023-04-03T06:24:22.483Z] CLI Version:   11.25.2
+[debug] [2023-04-03T06:24:22.483Z] Platform:      win32
+[debug] [2023-04-03T06:24:22.483Z] Node Version:  v18.13.0
+[debug] [2023-04-03T06:24:22.485Z] Time:          Mon Apr 03 2023 14:24:22 GMT+0800 (Malaysia Time)
+[debug] [2023-04-03T06:24:22.485Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=628052077&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-04-03T06:44:42.164Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2023-04-03T06:44:42.173Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"adf58990-e018-4c8b-be25-d0045f47ba4d"}
+[debug] [2023-04-03T06:44:43.396Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2023-04-03T06:44:43.396Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"DaRlw5ZXjryR4AQ7Ke1UEzb0KMwiwwZdCidOak3gPIU"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    ADF58
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=Se9vi5AJYu3AlPXPb1L__Hn3Wnl6XGJIX0wC6mPqXcU&session=adf58990-e018-4c8b-be25-d0045f47ba4d&attest=DaRlw5ZXjryR4AQ7Ke1UEzb0KMwiwwZdCidOak3gPIU
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2023-04-03T06:44:49.155Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2023-04-03T06:44:49.155Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2023-04-03T06:44:49.801Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 400
+[debug] [2023-04-03T06:44:49.801Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2023-04-03T06:44:49.811Z] Token Fetch Error: FirebaseError: HTTP Error: 400, invalid_request
+    at responseToError (C:\Users\viole\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\viole\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Unable to authenticate using the provided code. Please try again.

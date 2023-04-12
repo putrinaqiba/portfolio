@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="assets/css/art.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css"/>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
 
     <title>Title</title>
@@ -36,40 +40,49 @@
         </a></li>
     </ul>
 </nav>
-<div>
-    <div class="my-gallery">
-        <a href="https://cdn.discordapp.com/attachments/1085842557017276429/1092148788774305922/darling.png" data-size="1200x800">
-            <img src="https://cdn.discordapp.com/attachments/1085842557017276429/1092148788774305922/darling.png" alt="Image 1">
-        </a>
-        <a href="https://cdn.discordapp.com/attachments/1085842557017276429/1092148788774305922/darling.png" data-size="1200x800">
-            <img src="https://cdn.discordapp.com/attachments/1085842557017276429/1092148788774305922/darling.png" alt="Image 2">
-        </a>
-        <!-- Add more images here -->
+<section>
+    <div class="container">
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1085842557017276429/1092148788774305922/darling.png?width=682&height=682" alt="darling aura design">
+        </div>
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1085842557017276429/1092148789294415973/END_-_Copy_2.png?width=682&height=682" alt="heart aura design">
+        </div>
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1085842557017276429/1092148789990654102/CSR_POSTER.png?width=511&height=682" alt="csr poster">
+        </div>
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1085842557017276429/1092148789634158683/Computer_Repair.png?width=390&height=682" alt="ads">
+        </div>
+        <div>
+            <canvas class="circle">
+            </canvas>
+        </div>
+        <div class="particles"></div>
     </div>
+</section>
 
 
-</div>
 <script>
-    // Initialize Photoswipe
-    var gallery = new PhotoSwipe(document.querySelector('.my-gallery'), PhotoSwipeUI_Default, [
-        {
-            src: 'https://cdn.discordapp.com/attachments/1085842557017276429/1092148788774305922/darling.png',
-            w: 1200,
-            h: 800,
-            title: 'Image 1'
-        },
-        {
-            src: 'https://cdn.discordapp.com/attachments/1085842557017276429/1092148788774305922/darling.png',
-            w: 1200,
-            h: 800,
-            title: 'Image 2'
-        },
-        // Add more images here
-    ], {
-        // Options go here
-    });
+    function setup() {
+        createCanvas(1080, 720, WEBGL);
+        stroke(255); // set stroke to white
+        strokeWeight(1); // set stroke weight to 1px
+        noFill(); // don't fill the shape
+    }
 
+    function draw() {
+        background(0); // set background to black
+        rotateX(frameCount * 0.01); // rotate the sphere on the x-axis
+        rotateY(frameCount * 0.01); // rotate the sphere on the y-axis
+        sphere(300); // create a sphere with a radius of 100 pixels
+
+        // create grid pattern on sphere
+        for (let i = 0; i <= 180; i += 10) {
+            beginShape(LINES);
+            endShape();
+        }
+    }
 </script>
-
 </body>
 </html>
