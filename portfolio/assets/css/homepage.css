@@ -581,7 +581,6 @@ a:hover{
     }
 
     .section3.flex-container {
-        flex-direction: row; /* Change to a column layout on mobile screens */
     }
 
     .project-item {
