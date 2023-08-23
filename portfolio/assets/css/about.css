@@ -425,11 +425,6 @@ width: 100%;
     font-weight: bold;
 }
 
-section{
-    display: grid;
-    place-items: center;
-    align-content: center;
-}
 
 /* Media query for mobile screens */
 @media (max-width:900px) {
