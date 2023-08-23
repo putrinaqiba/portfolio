@@ -563,6 +563,10 @@ a:hover{
 
 
 @media (max-width:900px) {
+    body {
+        transform: scale(0.8); /* Adjust the scale factor as needed */
+        transform-origin: top left; /* Maintain the top-left corner as the scaling origin */
+    }
     .hero-text {
         padding: 20px; /* Maintain consistent padding on mobile */
     }
