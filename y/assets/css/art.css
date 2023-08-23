@@ -9,7 +9,7 @@ section {
     width: 100%;
 }
 
-body {
+.body {
     background: black;
     font-size: 100%;
     font-family: "SF Pro Display Regular", sans-serif;

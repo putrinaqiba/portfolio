@@ -10,13 +10,103 @@
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .about-item {
-    width: 40%;
-    margin-bottom: 100px;
+    width: 40%; /* Full width on smaller screens */
+    margin-bottom: 30px; /* Adjust as needed */
+    padding: 20px 0;
 }
+
+
+
+.navbar-nav .nav-link:hover {
+    color: white;
+
+}
+/* Custom CSS to make "Hire Me" link white on hover */
+.navbar-nav .nav-link:hover,
+.nav-link.contact-button:hover {
+    color: white;
+}
+.nav-item{
+    padding-right: 20px;
+}
+a:hover{
+    color: var(--bs-white);
+}
+
+
+
+.about-text {
+    background: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 3% 2%; /* Adjust padding as needed */
+    margin: 5% 0 8%; /* Adjust margins as needed */
+
+
+}
+
+.about-name {
+    opacity: 0.2;
+    animation: fadeIn 3s ease forwards;
+    color: white;
+    font-family: "SF Pro Text Ultralight", sans-serif ;
+    font-size: 31px;
+    margin-bottom: 3%;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+.about-details {
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+    color: white;
+    font-family: "SF Pro Text Ultralight", sans-serif ;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+.about-me-heading {
+    font-family: Commune, serif ;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 1.5;
+    background-size: 500px;
+    color: white;
+    margin-bottom: 3%;
+    text-shadow: 0 0 20px rgb(119, 207, 255);
+    animation: twinkling 6s ease-in-out infinite;
+    transition: text-shadow 0.1s ease-in-out;
+    padding: 10px 40px 10px 10px;
+}
+
+.about-section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+
+}
+/* Custom CSS to make "Hire Me" link white on hover */
+.navbar-nav .nav-link:hover,
+.nav-link.contact-button:hover {
+    color: white;
+}
+.nav-item{
+    padding-right: 20px;
+}
+a:hover{
+    color: var(--bs-white);
+}
+
+
 
 .about-text {
     background: black;
@@ -93,6 +183,7 @@
     font-weight: lighter;
     line-height: 2;
     padding: 10px 40px 10px 10px;
+    display: flex;
 
 
 }
@@ -126,10 +217,11 @@ width: 100%;
 
 
 .education-school-name-text {
-    display: block;
+    display: flex;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .education-place, .education-year {
@@ -155,12 +247,15 @@ width: 100%;
     justify-content: space-between;
     max-width: 800px;
     width: 100%;
+
 }
 
 .education-details {
     flex-basis: 50%;
     padding: 10px 40px 10px 10px;
     box-sizing: border-box;
+    width: calc(50% - 10px); /* Display two items per row by default with some spacing */
+    margin-bottom: 20px;
 }
 
 .education-school-name-text {
@@ -203,6 +298,7 @@ width: 100%;
     justify-content: space-between;
     max-width: 800px;
     width: 83%;
+
 }
 
 .skills-details{
@@ -249,6 +345,8 @@ width: 100%;
 }
 
 .experience-timeline {
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin: 0;
     padding: 0;
@@ -314,7 +412,7 @@ width: 100%;
 .experience-description{
     line-height: 2;
     font-size: 16px;
-    font-family: "SF Pro Text Ultralight",sans-serif;
+    font-family: "SF Pro Display Medium",sans-serif;
 }
 
 .experience-title{
@@ -331,6 +429,95 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
+}
+
+/* Media query for mobile screens */
+@media (max-width:900px) {
+    .experience-timeline {
+        flex-direction: row; /* Change to a row layout on mobile screens */
+        overflow-x: auto; /* Add horizontal scrolling for smaller screens if needed */
+        padding: 0 40px;
+        width: 100%;
+    }
+    .section3{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        overflow: hidden;
+        padding-bottom: 100px;
+    }
+    .experience-heading{
+        padding: 10px 40px 10px 40px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .experience-timeline-item {
+        flex: 0 0 auto; /* Allow items to shrink and grow as needed */
+        width: 100%; /* Take up full width of the container */
+        /* ... other styles ... */
+        padding: 10px 0;
+    }
+    .about-item {
+        width: 80%; /* Set the width for the "About" text */
+        margin: 0; /* Remove margin to keep it flush to the left */
+        padding: 20px 0;
+        margin-left:40px;
+    }
+    .about-container {
+        flex-direction: column-reverse; /* Reverse the order of items for mobile */
+        justify-content: flex-start; /* Align items to the left for all screen sizes */
+        align-items: flex-start; /* Center items vertically for all screen sizes */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-text{
+        padding: 20px 10px;
+    }
+    .section2{
+        padding:0;
+    }
+    .education-details{
+        flex-direction: row; /* Change to a row layout on smaller screens */
+        flex-wrap: wrap; /* Allow items to wrap onto new rows if needed */
+        width: 100%;
+        flex-basis: auto;
+    }
+    .education-section{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Center items horizontally within the container */
+        padding: 0 40px;
+        margin-top:40px;
+    }
+    .my-picture{
+        justify-content: space-between; /* Center items horizontally within the container */
+        width: 60%; /* Set the width for the image */
+        padding: 0; /* Remove padding */
+        max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+
+    }
+
+    .education-details-wrapper{
+    }
+
+    .education-school-name {
+        width: 100%; /* Display one item per row on smaller screens */
+    }
+    .skills-section{
+         width: 100%;
+        padding: 0 40px;
+     }
+    .skills-details{
+        padding: 0 40px;
+    }
+    .skills-details-wrapper{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
 }
 
 .hidden{
@@ -352,7 +539,7 @@ section{
     max-width: 650px;
     max-height: 655px;
     margin-bottom: 20px;
-    margin-top: 13%;
+    margin-top: 7%;
     border-radius: 10px;
     transition: transform .3s ease;
 }
