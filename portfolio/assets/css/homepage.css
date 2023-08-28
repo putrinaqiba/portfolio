@@ -572,6 +572,7 @@ a:hover{
     }
     .hero-text {
         padding: 20px; /* Maintain consistent padding on mobile */
+        margin-top: 0;
     }
 
     .hero-text .name {
