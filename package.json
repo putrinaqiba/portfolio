@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
@@ -11,5 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "locomotive-scroll": "^4.1.4"
+=======
+  "dependencies": {
+    "firebase": "^10.7.2"
+>>>>>>> 80c364da7f0662a90f0e5b79bbda8b42a866d1c9
   }
 }
