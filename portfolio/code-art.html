@@ -2,33 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <title>code art</title>
+    <link rel="stylesheet" href="assets/css/code-art.css">
+    <link rel="stylesheet" href="assets/css/locomotive-scroll.css">
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+    <script src="code-art.js"></script>
+
 </head>
-<body style="background: black">
+<body>
+<script src="locomotive-scroll.min.js"></script>
 <script>
-    function setup() {
-        createCanvas(1080, 720, WEBGL);
-        stroke(255); // set stroke to white
-        strokeWeight(1); // set stroke weight to 1px
-        noFill(); // don't fill the shape
-    }
-
-    function draw() {
-        background(0); // set background to black
-        rotateX(frameCount * 0.01); // rotate the sphere on the x-axis
-        rotateY(frameCount * 0.01); // rotate the sphere on the y-axis
-        sphere(300); // create a sphere with a radius of 100 pixels
-
-        // create grid pattern on sphere
-        for (let i = 0; i <= 180; i += 10) {
-            beginShape(LINES);
-            endShape();
-        }
-    }
+    (function () {
+        var scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    })();
 </script>
+<div data-scroll-container>
+    <section data-scroll-section>
+        <h1>
+            Code Art
+        </h1>
+        <p>
+            Coding Art
+        </p>
+    </section>
+<section data-scroll-section>
+        <h1 data-scroll-speed="1">description</h1>
+        <p data-scroll-speed="2">
+
+            Hello my name is Putri Naqibah Balqis!
+            I am an experienced IT professional with a passion for new technology and expertise in IT infrastructure, network management, and troubleshooting. Skilled in programming, UI/UX, and graphic design with a keen eye for detail in a collaborative, fast-paced environment.
+        </p>
+</section>
+</div>
+
+
+
+<canvas>
+
+</canvas>
 </body>
 
 </html>

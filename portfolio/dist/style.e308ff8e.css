@@ -1,4 +1,106 @@
-@import url('./fonts.css');
+/*@font-face {*/
+/*    font-family: 'SF Pro Text Thin Italic';*/
+/*    src: url('portfolio/assets/fonts/SF-Pro/SF-Pro-Display-ThinItalic.otf') format('opentype');*/
+/*}*/
+
+@font-face {
+    font-family: 'SF Pro Text Ultralight';
+    src: url('/a2060ca9d6d35480fa63e3d464abc0d5.otf') format('opentype');
+    font-weight: 200; /* or specify the actual font weight if applicable */
+    font-style: normal; /* or specify 'italic' for italic fonts if applicable */
+}
+
+@font-face {
+    font-family: 'SF Pro Text Thin';
+    src: url('/27cdce0f623c171f145248c4c052d29b.otf') format('opentype');
+    font-weight: 200; /* or specify the actual font weight if applicable */
+    font-style: normal; /* or specify 'italic' for italic fonts if applicable */
+}
+
+@font-face {
+    font-family: 'Commune';
+    src: url('/c7e6d5ec05e42531849c8e78deb6882a.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('/14824178445c302d57a26687b3a6541b.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*@font-face {*/
+/*    font-family: 'SF Pro';*/
+/*    src: url('portfolio/assets/fonts/SF-Pro/SF-Pro.ttf') format('truetype');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'SF Pro Display Black';*/
+/*    src: url('portfolio/assets/fonts/SF-Pro/SF-Pro-Display-Black.otf') format('opentype');*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'SF Pro Display Black Italic';*/
+/*    src: url('portfolio/assets/fonts/SF-Pro/SF-Pro-Display-BlackItalic.otf') format('opentype');*/
+/*}*/
+
+@font-face {
+    font-family: 'SF Pro Display Bold';
+    src: url('/fa078e4f7b0347c8a8f48641d70ce10f.otf') format('opentype');
+}
+
+/*@font-face {*/
+/*    font-family: 'SF Pro Display Bold Italic';*/
+/*    src: url('portfolio/assets/fonts/SF-Pro/SF-Pro-Display-BoldItalic.otf') format('opentype');*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'SF Pro Display Heavy';*/
+/*    src: url('portfolio/assets/fonts/SF-Pro/SF-Pro-Display-Heavy.otf') format('opentype');*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'SF Pro Display Heavy Italic';*/
+/*    src: url('portfolio/assets/fonts/SF-Pro/SF-Pro-Display-HeavyItalic.otf') format('opentype');*/
+/*}*/
+
+@font-face {
+    font-family: 'SF Pro Display Light';
+    src: url('/8782c15a30fa94e69e645f2e7ad0f0d7.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SF Pro Display Light Italic';
+    src: url('/5886f585c078454e1dd3386d6bcfd398.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Medium';
+    src: url('/3ec8cb109cfeb99741fc825f73de367c.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Medium Italic';
+    src: url('/7676f931c5274a500e1031443f3942fc.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'SF Pro Display Regular Italic';
+    src: url('/250ee49d0bf0081e19ae79871ecb5e55.otf') format('opentype');
+}
+
+
 *{
     overflow-x: hidden;
 
@@ -606,3 +708,6 @@ a:hover{
 }
 
 
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
