@@ -90,7 +90,9 @@
     height: 100%; /* Adjust the value based on your preference */
     object-fit: cover;
     margin-bottom: 20px;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;t;
+    padding-top: 20px;
+
 }
 
 img {
