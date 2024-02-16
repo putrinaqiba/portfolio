@@ -61,21 +61,32 @@
     max-width: 700px;
     max-height: 900px;
     margin-bottom: 20px;
+    text-decoration: none;
 
     border-radius: 10px;
     transition: transform .3s ease;
 }
+a .card-text{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.second{
+    padding-bottom: 160px;
+
+  }
 
 .card {
     background-color: #1a1a1a;
     border-radius: 20px;
     margin: 20px;
-    padding: 20px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    transition: box-shadow 0.1s ease-in-out, transform 0.5s ease-in-out;
+    transition: box-shadow 0.1s ease-in-out, transform 0.3s ease-in-out;
     transform-origin: center; /* Adjust the scaling origin as needed */
     padding-top: 0;
-
+    text-decoration: none;
+    color: white;
 }
 
 .card:hover {
@@ -90,7 +101,7 @@
     height: 100%; /* Adjust the value based on your preference */
     object-fit: cover;
     margin-bottom: 20px;
-    transition: transform 0.1s ease-in-out;t;
+    transition: transform 0.1s ease-in-out;
     padding-top: 20px;
 
 }
@@ -104,9 +115,34 @@ img {
 }
 .card-title{
     font-size: 1.5em;
-    font-family: SF Pro Display Light,sans-serif;
+    font-family: SF Pro Display,sans-serif;
     color: white;
     text-align: left;
     padding-bottom: 10px;
     font-weight: bold;
+}
+
+@media (max-width:900px){
+    body{
+        margin:0;
+        overflow: hidden;
+    }
+    .card{
+        margin: 0;
+    }
+    .card-body{
+        padding:0;
+    }
+    .card:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        transform: none; /* Set transform to none for mobile view */
+    }
+    .first{
+        padding-bottom: 20px;
+    }
+    .second{
+        padding-bottom: 20px;
+    }
+
+
 }
