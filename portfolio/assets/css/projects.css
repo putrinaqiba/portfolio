@@ -1,0 +1,104 @@
+.title{
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Commune,serif;
+    color: white;
+    text-align: center;
+    background-size: 200%;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    animation: twinkling 6s ease-in-out infinite;
+    transition: text-shadow 0.1s ease-in-out;
+    padding-left:20px;
+    padding-right:40px;
+    padding-bottom: 10px;
+}
+
+.body{
+    padding-bottom: 90px;
+}
+
+@keyframes twinkling {
+    0% {
+        text-shadow: 0 0 0px #ffffff;
+    }
+    25% {
+        text-shadow: 0 0 10px #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 20px #ffffff;
+    }
+    75% {
+        text-shadow: 0 0 10px #ffffff;
+    }
+    100% {
+        text-shadow: 0 0 0px #ffffff;
+    }
+}
+
+
+.subheading{
+    font-size: 1em;
+
+    margin-bottom: 20px;
+    font-family: SF Pro Display Light,sans-serif;
+    color: white;
+    text-align: center;
+    padding-left:20px;
+    padding-right:40px;
+    padding-bottom: 10px;
+}
+
+.card-body{
+    font-size: 1em;
+    font-family: SF Pro Display Light,sans-serif;
+    color: white;
+    text-align: left;
+    padding-left:20px;
+    padding-right:40px;
+    padding-bottom: 10px;
+
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.1s ease-in-out, transform 0.5s ease-in-out;
+    transform-origin: center; /* Adjust the scaling origin as needed */
+    padding-top: 0;
+
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 100%; /* Adjust the value based on your preference */
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+.card-title{
+    font-size: 1.5em;
+    font-family: SF Pro Display Light,sans-serif;
+    color: white;
+    text-align: left;
+    padding-bottom: 10px;
+    font-weight: bold;
+}

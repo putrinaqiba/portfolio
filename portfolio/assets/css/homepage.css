@@ -453,10 +453,18 @@ a:hover{
 .projects-tags span {
     font-size: 16px;
     padding: 5px 10px;
-    background-color: #000000;
+    background-color: #232323;
     color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 7px;
+
+
+}
+
+.projects-tags span:hover {
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: white 0 0 10px 3px;
 }
 
 
@@ -471,10 +479,13 @@ a:hover{
 }
 
 .projects-title , .projects-description  , .projects-tags{
-    margin-left: 80px;
-    margin-top: 30px;
-    margin-right: 80px;
 
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+    color: white;
+    font-weight: lighter;
+    line-height: 2;
+    padding: 10px 10px 10px 10px;
 }
 
 .see-more-btn {
